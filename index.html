@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./images/envelope.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anniversary-letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div
+      id=""
+      class="w-svw h-svh bg-[#ff4c50] flex justify-center items-center py-8 px-4 overflow-hidden"
+    >
+      <!--PAGE 01-->
+      <div
+        id="page-01"
+        class="rounded-md trans bg-[#fcfbf6] shrink-0 w-[350px] h-full grid-pattern flex justify-center items-center"
+      >
+        <div class="flex flex-col gap-2 items-center w-1/2">
+          <img src="./images/flower.png" class="w-full" alt="" />
+          <p class="text-4xl text-center">Susan<br />my love</p>
+          <button
+            class="text-2xl flex flex-col justify-center items-center"
+            id="page-01-open-btn"
+          >
+            <div class="shake">
+              <img
+                src="./images/envelope.png"
+                class="w-8 trans"
+                alt=""
+                id="page-01-open-btn-img"
+              />
+            </div>
+            Open
+          </button>
+        </div>
+      </div>
+      <!--PAGE 02-->
+      <div
+        id="page-02"
+        class="hidden opacity-0 scale-[0.5] trans rounded-md bg-[#fcfbf6] shrink-0 w-[350px] h-full relative random-image-background overflow-hidden"
+      >
+        <!-- pow -->
+        <img
+          src="./images/maow.png"
+          class="size-40 absolute top-[-12%] left-1/2 -translate-x-1/2 bounce cursor-pointer transition-all duration-1000 ease-in-out"
+          alt=""
+          id="page-02-cat-img"
+        />
+        <div
+          id="page-02-frame-1"
+          class="w-full h-1/2 absolute top-1/2 -translate-y-1/2 trans flex justify-center items-center"
+          alt=""
+        >
+          <p class="text-4xl font-semibold text-center px-4">
+            Maw is calling you.
+          </p>
+        </div>
+        <div
+          id="page-02-frame-2"
+          class="w-full h-1/2 absolute top-0 -translate-y-full trans flex flex-col justify-center items-center gap-8"
+          alt=""
+        >
+          <p class="text-4xl font-semibold text-center px-4">
+            walid has a letter for you
+          </p>
+          <button id="page-02-frame-2-btn">
+            <div class="shake">
+              <img
+                src="./images/love-letter.png"
+                class="size-12 trans"
+                alt=""
+                id="page-02-frame-2-img"
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+      <!--PAGE 03-->
+      <div
+        id="page-03"
+        class="hidden opacity-0 scale-[0.5] trans rounded-md bg-[#fcfbf6] shrink-0 w-[90%] h-full relative overflow-hidden"
+      >
+        <p class="size-full px-2 pt-6 pb-[50%] overflow-auto font-semibold">
+          <b>My Dearest Susan,</b>
+          <br /><br />
+          As my birthday approaches, I can’t help but feel a mix of emotions.
+          This time last year, we were together in Egypt, creating some of the
+          most beautiful memories of my life. I remember the day you arrived
+          just before my birthday and how excited I was to finally meet you in
+          person after all those years. Our time by the Nile, that cozy coffee
+          shop we both loved, and the endless moments we shared at home, just
+          you and me. It all feels so close, as if it happened yesterday.
+          <br /><br />
+          I still smile when I think of the moment you asked me if I wanted to
+          be your lover. It was something I had been thinking about for so long,
+          but I was too scared to bring it up, worrying that things might get
+          awkward. But you, my love, took the step, and my heart has been yours
+          ever since. From that moment, on my last birthday, we became something
+          truly special.
+          <br /><br />
+          This past year apart hasn’t been easy, but our love has only grown
+          stronger. Even though we’re miles away—me in Egypt, you in Italy—we’ve
+          managed to nurture and deepen our connection. You, Susan, are my
+          everything, and I know that despite the obstacles and the complexities
+          of our situation, we will find a way to be together, always.
+          <br /><br />
+          As our anniversary and my birthday draw near, I want you to know how
+          much you mean to me. Our journey hasn’t been the easiest, but it’s
+          been worth every step because I have you by my side. No matter the
+          distance, my heart is always with you.
+          <br /><br />
+          I can’t wait for the day when we no longer have to count the miles
+          between us. Until then, I hold on to the hope of our future together
+          and cherish every moment we’ve shared.
+          <br /><br />
+          With all my love, <br />
+          Walid<br />
+        </p>
+        <img
+          src="./images/letter-envelope.png"
+          class="absolute bottom-0 right-0 h-[30%]"
+          alt=""
+        />
+        <img
+          id="play"
+          class="absolute top-4 right-6 size-8 cursor-pointer"
+          src="./images/audio.png"
+          alt=""
+        />
+        <img
+          id="pause"
+          class="absolute top-4 right-6 size-8 cursor-pointer hidden"
+          src="./images/audio.gif"
+          alt=""
+        />
+        <audio
+          id="audioPlayer"
+          controls
+          class="absolutetop-[999] left-[999] invisible"
+          src="./audio/audio-letter.mp3"
+        >
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
